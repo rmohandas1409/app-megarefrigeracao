@@ -135,3 +135,11 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 django_heroku.settings(locals())
+
+AWS_ACCESS_KEY_ID = 'AKIAXEHSBG5APX5JVFMI'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'app-megarefrigeracao'
+
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL = None
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
